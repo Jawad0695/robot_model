@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="mobile_robot_description">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0031627 -3.2246E-06 0.016178"
+        rpy="0 0 0" />
+      <mass
+        value="0.51602" />
+      <inertia
+        ixx="0.00023754"
+        ixy="-1.3514E-08"
+        ixz="2.4906E-07"
+        iyy="0.00043755"
+        iyz="1.0012E-09"
+        izz="0.00040613" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot_description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_right_rear">
+    <inertial>
+      <origin
+        xyz="0 -3.4694E-18 -0.0077492"
+        rpy="0 0 0" />
+      <mass
+        value="0.079711" />
+      <inertia
+        ixx="3.3496E-05"
+        ixy="3.3212E-22"
+        ixz="2.428E-22"
+        iyy="3.3496E-05"
+        iyz="-7.5137E-23"
+        izz="6.3285E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot_description/meshes/link_right_rear.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot_description/meshes/link_right_rear.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_right_rear"
+    type="continuous">
+    <origin
+      xyz="0.048538 0.06785 0.01615"
+      rpy="1.5708 0 -3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_right_rear" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      effort="20"
+      velocity="0.5" />
+  </joint>
+  <link
+    name="link_right_back">
+    <inertial>
+      <origin
+        xyz="1.3878E-17 -3.4694E-18 -0.0077492"
+        rpy="0 0 0" />
+      <mass
+        value="0.079711" />
+      <inertia
+        ixx="3.3496E-05"
+        ixy="2.2481E-22"
+        ixz="8.5588E-23"
+        iyy="3.3496E-05"
+        iyz="6.7653E-23"
+        izz="6.3285E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot_description/meshes/link_right_back.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot_description/meshes/link_right_back.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_right_back"
+    type="continuous">
+    <origin
+      xyz="-0.051162 0.06785 0.01615"
+      rpy="1.5708 0 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_right_back" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      effort="20"
+      velocity="0.5" />
+  </joint>
+  <link
+    name="link_left_rear">
+    <inertial>
+      <origin
+        xyz="0 -3.4694E-18 -0.0077492"
+        rpy="0 0 0" />
+      <mass
+        value="0.079711" />
+      <inertia
+        ixx="3.3496E-05"
+        ixy="2.2481E-22"
+        ixz="8.5595E-23"
+        iyy="3.3496E-05"
+        iyz="6.7668E-23"
+        izz="6.3285E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot_description/meshes/link_left_rear.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot_description/meshes/link_left_rear.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_left_rear"
+    type="continuous">
+    <origin
+      xyz="0.048538 -0.06785 0.01615"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_left_rear" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      effort="20"
+      velocity="0.5" />
+  </joint>
+  <link
+    name="link_left_back">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot_description/meshes/link_left_back.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mobile_robot_description/meshes/link_left_back.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_left_back"
+    type="continuous">
+    <origin
+      xyz="-0.051162 -0.06785 0.01615"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_left_back" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      effort="20"
+      velocity="0.5" />
+  </joint>
+</robot>
